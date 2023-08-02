@@ -9,7 +9,8 @@
 <body>
     <div class="card">
         <h3>Типы переменных</h3>
-        <ol>
+        <button class="btn" ol="type">Показать</button>
+        <ol id="type">
             <li>number - числа</li>
             <li>bigint - очень большие числа</li>
             <li>boolean - правда/ложь</li>
@@ -22,7 +23,8 @@
     </div>
     <div class="card">
         <h3>Методы чисел</h3>
-        <ol>
+        <button class="btn" ol="num">Показать</button>
+        <ol id="num">
             <li>Если много нулей можно использовать e - 123e6 = 123000000</li>
             <li>Math.floor - округление в меньшую сторону</li>
             <li>Math.ceil - округление в большую сторону</li>
@@ -40,7 +42,8 @@
     </div>
     <div class="card">
          <h3>Методы строк</h3>
-          <ol>
+         <button class="btn" ol="str">Показать</button>
+          <ol id="str">
             <li>Писать строчку можно и в `` - тогда можно через ${} вставлять переменные</li>
             <li>Спецсимволы:
                 <ul>
@@ -64,7 +67,8 @@
     <div class="card">
         <h3>Методы массивов</h3>
         <p>*Массив это упорядочный объект</p>
-        <ol>
+        <button class="btn" ol="arr">Показать</button>
+        <ol id="arr">
             <h4>Простые</h4>
             <li>arr[0] - вернет первый элемент массива</li>
             <li>arr.length - вернет колличество элементов</li>
@@ -75,8 +79,6 @@
             <li>arr.unshift добавляет элемент в начало</li>
             <li>Перебор for(let fruit of fruits){} - проходит по значениям</li>
             <li>Перебор for (let key in arr){} - - проходит по ключам</li>
-        </ol>
-        <ol>
             <h4>Сложные</h4>
             <li>arr.splice(start[, deleteCount, elem1, ..., elemN]) - Он изменяет arr начиная с индекса start: удаляет deleteCount элементов и затем вставляет elem1, ..., elemN на их место. Возвращает массив из удалённых элементов.</li>
             <li>arr.slice - Он возвращает новый массив, в который копирует все элементы с индекса start до end (не включая end).</li>
@@ -107,5 +109,20 @@
                 <li>Array.isArray([]) проверка, что это массив</li>
         </ol>
     </div>
+    <div class="card">
+        <h3>Объекты</h3>
+        <div class="obj">
+            <p>Задаются так: <br>
+            let user = {<br>
+            name:'Some',<br>
+            age: 15<br>}</p>
+            <p>Для обращения к параметру объекта user.name или user[name]</p>
+        </div>
+        
+    </div>
+
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

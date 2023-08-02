@@ -18,3 +18,22 @@ h3 {
 ol li {
     margin-bottom: 5px;
 }
+
+ol {
+    display: none;
+}
+
+.displayBlock {
+    display: block;
+}
+
+.btn {
+    border: 1px solid rgb(7, 92, 21);
+    border-radius: 20px;
+    background: white;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    margin: auto;
+    display: flex
+}
