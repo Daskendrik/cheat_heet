@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шпаргалка по js</title>
+</head>
+<body>
+    <div class="card">
+        <h3>Типы переменных</h3>
+        <ol>
+            <li>number - числа</li>
+            <li>bigint - очень большие числа</li>
+            <li>boolean - правда/ложь</li>
+            <li>string - строковые.</li>
+            <li>null - неизвестное значение</li>
+            <li>undefined - неприсвоенное значение</li>
+            <li>symbol - символ</li>
+            <li>object - объект</li>
+        </ol>
+    </div>
+    <div class="card">
+        <h3>Методы чисел</h3>
+        <ol>
+            <li>Если много нулей можно использовать e - 123e6 = 123000000</li>
+            <li>Math.floor - округление в меньшую сторону</li>
+            <li>Math.ceil - округление в большую сторону</li>
+            <li>Math.round - округление до ближайшего целого</li>
+            <li>Math.random() - возвращает рандомное число от 0 до 1</li>
+            <li>Math.max(a, b, c...) / Math.min(a, b, c...) - возвращает максимум или минимум</li>
+            <li>Math.pow(n, power) - Возвращает число n, возведённое в степень power</li>
+            <li>Math.trunc - производит удаление дробной части без округления: 3.1 становится 3</li>
+            <li>num.toFixed(n) - округляет число до n </li>
+            <li>isNaN(value) преобразует значение в число и проверяет является ли оно NaN</li>
+            <li>isFinite(value) преобразует аргумент в число и возвращает true, если оно является обычным числом, т.е. не NaN/Infinity/-Infinity</li>
+            <li>Number() или +str - преобразование в число</li>
+            <li>parseInt()/parseFloat() - вытаскивает из строки число и преобразует в число, то только, если число идет первым в строке, иначе NaN</li>
+        </ol>
+    </div>
+    <div class="card">
+         <h3>Методы строк</h3>
+          <ol>
+            <li>Писать строчку можно и в `` - тогда можно через ${} вставлять переменные</li>
+            <li>Спецсимволы:
+                <ul>
+                    <li>\n	Перевод строки</li>
+                    <li>\r В текстовых файлах Windows для перевода строки используется комбинация символов \r\n</li>
+                    <li>\', \"	Кавычки</li>
+                    <li>\\	Обратный слеш</li>
+                    <li>\t	Знак табуляции</li>
+                    <li>\b, \f, \v	Backspace, Form Feed и Vertical Tab — оставлены для обратной совместимости, сейчас не используются.</li>
+                </ul>
+            </li>
+            <li>str.length - длина строки</li>
+            <li>str[0] - доступ к первому символу</li>
+            <li>str.toLowerCase() / str.toUpperCase() - все символы строчные/заглавные</li>
+            <li>str.indexOf(substr, pos) - поиск substr в str начиная с пощиции pos. Если такого нет, то вернет -1, иначе индекс где нашлось</li>
+            <li>str.includes(substr, pos) - возвращает true, если в строке str есть подстрока substr, либо false, если нет</li>
+            <li>str.startsWith()/str.endsWith()- проверяет, что строка начинается/заканчивается</li>
+          </ol>
+    </div>
+</body>
+</html>
