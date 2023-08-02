@@ -1,0 +1,16 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card {
+    background: rgb(217, 240, 217);
+    margin: 10px 40px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid green;
+    border-radius: 15px;
+}
+
+h3 {
+    text-align: center;
+
+}
