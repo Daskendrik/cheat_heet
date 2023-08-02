@@ -58,7 +58,54 @@
             <li>str.indexOf(substr, pos) - поиск substr в str начиная с пощиции pos. Если такого нет, то вернет -1, иначе индекс где нашлось</li>
             <li>str.includes(substr, pos) - возвращает true, если в строке str есть подстрока substr, либо false, если нет</li>
             <li>str.startsWith()/str.endsWith()- проверяет, что строка начинается/заканчивается</li>
+            <li>str.split(delim) - преобразует строку в массив с делителем delim</li>
           </ol>
+    </div>
+    <div class="card">
+        <h3>Методы массивов</h3>
+        <p>*Массив это упорядочный объект</p>
+        <ol>
+            <h4>Простые</h4>
+            <li>arr[0] - вернет первый элемент массива</li>
+            <li>arr.length - вернет колличество элементов</li>
+            <li>arr.at() = arr[], но в () можно указывать отрицательно и поиск будет с конца</li>
+            <li>arr.push добавляет элемент в конец</li>
+            <li>arr.shift удаляет элемент в начале и возвращает его</li>
+            <li>arr.pop удаляет последний элемент и возвращает его</li>
+            <li>arr.unshift добавляет элемент в начало</li>
+            <li>Перебор for(let fruit of fruits){} - проходит по значениям</li>
+            <li>Перебор for (let key in arr){} - - проходит по ключам</li>
+        </ol>
+        <ol>
+            <h4>Сложные</h4>
+            <li>arr.splice(start[, deleteCount, elem1, ..., elemN]) - Он изменяет arr начиная с индекса start: удаляет deleteCount элементов и затем вставляет elem1, ..., elemN на их место. Возвращает массив из удалённых элементов.</li>
+            <li>arr.slice - Он возвращает новый массив, в который копирует все элементы с индекса start до end (не включая end).</li>
+            <li>arr.concat(arg1, arg2...) - В результате – новый массив, включающий в себя элементы из arr, затем arg1, arg2 и так далее.</li>
+            <li>arr.forEach(function(item, index, array) {}); - перебирает массив и что то делает с его элементами</li>
+            <li>arr.indexOf(item, from) ищет item начиная с индекса from и возвращает номер индекса, на котором был найден искомый элемент, в противном случае -1.</li>
+            <li>arr.includes(item, from) ищет item начиная с индекса from и возвращает true, если поиск успешен.</li>
+            <li>arr.find(function(item, index, array) {
+                <br>// если true - возвращается текущий элемент и перебор прерывается
+                <br>// если все итерации оказались ложными, возвращается undefined
+              <br>});<br> где item – очередной элемент. index – его индекс.  array – сам массив</li>
+            <li>arr.filter(function(item, index, array) {
+                <br>// если `true` -- элемент добавляется к results и перебор продолжается
+                <br>// возвращается пустой массив в случае, если ничего не найдено<br>
+              });</li>
+            <li>arr.map(function(item, index, array) {
+                <br>// возвращается новое значение вместо элемента
+                <br>});</li>
+            <li>arr.sort(); - ортирует массив на месте, меняя в нём порядок элементов</li>
+            <li> arr.reverse меняет порядок элементов в arr на обратный</li>
+            <li>arr.join(glue) - преобразует массив в строку с делителем glue </li>
+            <li>arr.reduce(function(accumulator, item, index, array) {
+                <br> // ...
+                <br>}, [initial]); <br>accumulator – результат предыдущего вызова этой функции, равен initial при первом вызове (если передан initial),
+                item – очередной элемент массива,
+                index – его позиция,
+                array – сам массив.<br>arr.reduceRight  - тоже самое, только с права на лево</li>
+                <li>Array.isArray([]) проверка, что это массив</li>
+        </ol>
     </div>
 </body>
 </html>

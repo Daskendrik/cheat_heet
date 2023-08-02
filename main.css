@@ -14,3 +14,7 @@ h3 {
     text-align: center;
 
 }
+
+ol li {
+    margin-bottom: 5px;
+}
