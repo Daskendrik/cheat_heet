@@ -8,8 +8,15 @@
 </head>
 <body>
     <div class="card">
-        <h3>Типы переменных</h3>
-        <button class="btn" ol="type">Показать</button>
+        <p style="text-align: center;"><a href="index.html">Вернуться в меню</a></p>
+    </div>
+    <div class="card">
+        <div style="display: flex;">
+            <button class="btn" ol="type">Показать</button>
+            <h3 >Типы переменных</h3>
+            <button class="btn" ol="type_test">Протестируй</button>
+        </div>
+        
         <ol id="type">
             <li>number - числа</li>
             <li>bigint - очень большие числа</li>
@@ -20,10 +27,24 @@
             <li>symbol - символ</li>
             <li>object - объект</li>
         </ol>
+
+        <ol id="type_test">
+            <li>number</li>
+            <li>bigint </li>
+            <li>boolean</li>
+            <li>string</li>
+            <li>null</li>
+            <li>undefined</li>
+            <li>symbol</li>
+            <li>object</li>
+        </ol>
     </div>
     <div class="card">
-        <h3>Методы чисел</h3>
-        <button class="btn" ol="num">Показать</button>
+        <div style="display: flex;">
+            <button class="btn" ol="num">Показать</button>
+            <h3>Методы чисел</h3>
+            <button class="btn" ol="num_test">Протестируй</button>
+        </div>
         <ol id="num">
             <li>Если много нулей можно использовать e - 123e6 = 123000000</li>
             <li>Math.floor - округление в меньшую сторону</li>
@@ -38,6 +59,21 @@
             <li>isFinite(value) преобразует аргумент в число и возвращает true, если оно является обычным числом, т.е. не NaN/Infinity/-Infinity</li>
             <li>Number() или +str - преобразование в число</li>
             <li>parseInt()/parseFloat() - вытаскивает из строки число и преобразует в число, то только, если число идет первым в строке, иначе NaN</li>
+        </ol>
+        <ol id="num_test">
+            <li> e </li>
+            <li>Math.floor</li>
+            <li>Math.ceil</li>
+            <li>Math.round </li>
+            <li>Math.random()</li>
+            <li>Math.max(a, b, c...) / Math.min(a, b, c...) </li>
+            <li>Math.pow(n, power)</li>
+            <li>Math.trunc</li>
+            <li>num.toFixed(n)</li>
+            <li>isNaN(value) </li>
+            <li>isFinite(value) </li>
+            <li>Number() или +str </li>
+            <li>parseInt()/parseFloat() </li>
         </ol>
     </div>
     <div class="card">
