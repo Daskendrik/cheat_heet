@@ -37,3 +37,9 @@ ol {
     margin: auto;
     display: flex
 }
+
+.typeVariable {
+    color: red;
+    text-decoration: dotted;
+}
+
