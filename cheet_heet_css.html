@@ -8,8 +8,12 @@
 </head>
 <body>
     <div class="card">
+        <p style="text-align: center;"><a href="index.html">Вернуться в меню</a></p>
+    </div>
+    <div class="card">
         <h3>Селекторы</h3>
-        <ol style="display: block;">
+        <button class="btn" ol="sel">Показать</button>
+        <ol id="sel">
             <li>.class</li>
             <li>#id</li>
             <li>tag</li>
@@ -19,7 +23,8 @@
     </div>
     <div class="card">
         <h3>Псевдоклассы</h3>
-        <ol style="display: block;">
+        <button class="btn" ol="psesel">Показать</button>
+        <ol id="psesel">
             <li>:hover - наведение</li>
             <li>:active - активно</li>
             <li>:checked - находит любые элементы radio checkbox или option, которые выбраны или включены.</li>
@@ -51,7 +56,8 @@
     </div>
     <div class="card">
          <h3>Часто используемые свойства</h3>
-         <ol style="display: block;">
+         <button class="btn" ol="param">Показать</button>
+         <ol id="param">
             <h4>Текст</h4>
             <li>font-size</li>
             <li>font-weight</li>
@@ -74,7 +80,8 @@
     <div class="card">
         <h3>CSS-переходы</h3>
         <p><a href="https://learn.javascript.ru/css-animations">Инфа</a></p>
-        <ol style="display: block;">
+        <button class="btn" ol="css_go">Показать</button>
+        <ol id="css_go">
            <li>transition-property – свойство перехода</li>
            <li>transition-duration – продолжительность перехода</li>
            <li>transition-timing-function – временная функция перехода</li>
@@ -84,7 +91,8 @@
     <div class="card">
         <h3>Анимация</h3>
         <p><a href="https://youtu.be/GKgOOuTL0po">Инфа</a><a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_animations/Using_CSS_animations">  Инфа 2</a></p>
-        <ol style="display: block;">
+        <button class="btn" ol="css_anim">Показать</button>
+        <ol id="css_anim">
            <li>Анимация создается с помощью @keyframes где пишется animation-name</li>
            <li>animation-name – имя анимации прописывается в селекторе того, что будет анимироваться</li>
            <li>animation-duration – определяет время, в течение которого должен пройти один цикл анимации</li>
@@ -100,7 +108,10 @@
             Настраивает значения, используемые анимацией, до и после исполнения.</li>
             <li>animation-play-state
             Позволяет приостановить и возобновить анимацию.</li>
+            <li>animation и далее все свйства в строчку</li>
         </ol>
    </div>
+   <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="main.js"></script>
 </body>
 </html> 
