@@ -93,6 +93,45 @@
          </ol>
     </div>
     <div class="card">
+        <h3>Отдельно про display, а именно его значения</h3>
+        <p><a href="https://learn.javascript.ru/display">Инфа</a></p>
+        <button class="btn" ol="display">Показать</button>
+        <ol id="display">
+           <li>none – элемент не показывается</li>
+           <li>block – блочные элементы располагаются один над другим, вертикально, стремится расшириться на всю доступную ширину</li>
+           <li>inline - элементы располагаются на той же строке, последовательно. Ширина и высота элемента определяются по содержимому. Поменять их нельзя.</li>
+           <li>inline-block – располагается в строке, размер устанавливается по содержимому, Элемент всегда прямоугольный, работают свойства width/height.</li>
+           <li>table-* - для таблицы целиком table, для строки – table-row, для ячейки – table-cell. Это действительно полноценная таблица
+            <ul>
+                <li>table    { display: table }</li>
+                <li>tr       { display: table-row }</li>
+                <li>thead    { display: table-header-group }</li>
+                <li>tbody    { display: table-row-group }</li>
+                <li>tfoot    { display: table-footer-group }</li>
+                <li>col      { display: table-column }</li>
+                <li>colgroup { display: table-column-group }</li>
+                <li>td, th   { display: table-cell }</li>
+                <li>caption  { display: table-caption }</li>
+            </ul>
+           </li>
+           <li>list-item - добавляет к блоку с содержимым ещё и блок с номером(значком) списка</li>
+           <li>flex-box - </li>
+        </ol>
+    </div>
+    <div class="card">
+        <h3>Отдельно про float и clear</h3>
+        <a href="https://learn.javascript.ru/float">Инфа</a>
+        <button class="btn" ol="float">Показать</button>
+        <ol id="float">
+           <li>Элемент позиционируется как обычно, а затем вынимается из документа потока и сдвигается влево (для left) или вправо (для right) до того как коснётся либо границы родителя, либо другого элемента с float</li>
+           <li>Если пространства по горизонтали не хватает для того, чтобы вместить элемент, то он сдвигается вниз до тех пор, пока не начнёт помещаться.</li>
+           <li>Другие непозиционированные блочные элементы без float ведут себя так, как будто элемента с float нет, так как он убран из потока.</li>
+           <li>Строки (inline-элементы), напротив, «знают» о float и обтекают элемент по сторонам.</li>
+           <li>Из-за того, что блок с float удалён из потока, родитель не выделяет под него места. Родителю надо добавить тоже float</li>
+           <li>clear - Применение этого свойства сдвигает элемент вниз до тех пор, пока не закончатся float'ы слева/справа/с обеих сторон.</li>
+        </ol>
+   </div>
+    <div class="card">
         <h3>CSS-переходы</h3>
         <p><a href="https://learn.javascript.ru/css-animations">Инфа</a></p>
         <button class="btn" ol="css_go">Показать</button>
