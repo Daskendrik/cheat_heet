@@ -153,11 +153,51 @@
             name:'Some',<br>
             age: 15<br>}</p>
             <p>Для обращения к параметру объекта user.name или user[name]</p>
+            <p>Функции, которые находятся в свойствах объекта, называются «методами».</p>
+            <p>Методы могут ссылаться на объект через this.</p>
+            <p>Проверка наличия  - ? <ul>
+                <li>obj?.prop – возвращает obj.prop если obj существует, в противном случае undefined.</li>
+                <li>obj?.[prop] – возвращает obj[prop] если obj существует, в противном случае undefined.</li>
+                <li>obj.method?.() – вызывает obj.method(), если obj.method существует, в противном случае возвращает undefined.</li>
+            </ul></p>
+
         </div>
-        
     </div>
-
-
+    <div class="card">
+        <h3>Функция-конструктор</h3>
+        <p>Такие функции используются для создания объектов</p>
+        <p>Имя функции-конструктора должно начинаться с большой буквы.</p>
+        <p>Функция-конструктор должна выполняться только с помощью оператора "new".</p>
+    </div>
+    <div class="card">
+        <h3>Время</h3>
+        <div class="obj">
+            <ol style="display: block;">
+                <li>new Date() - текущие время и дата</li>
+                <li>new Date(milliseconds) - с временем, равным количеству миллисекунд (тысячная доля секунды), прошедших с 1 января 1970 года UTC+0</li>
+                <li>new Date(datestring) - если аргумент всего один, и это строка, то из неё «прочитывается» дата</li>
+                <li>new Date(year, month, date, hours, minutes, seconds, ms) - с заданными компонентами в местном часовом поясе</li>
+                <h4>Методы времени</h4>
+                <li>getFullYear() - получить год (4 цифры)</li>
+                <li>getMonth() - получить месяц, от 0 до 11.</li>
+                <li>getDate() - получить день месяца, от 1 до 31, что несколько противоречит названию метода.</li>
+                <li>getHours(), getMinutes(), getSeconds(), getMilliseconds() - получить, соответственно, часы, минуты, секунды или миллисекунды.</li>
+                <li>getDay() - вернуть день недели от 0 (воскресенье) до 6 (суббота).</li>
+                <li>getTime() -  для заданной даты возвращает таймстамп – количество миллисекунд, прошедших с 1 января 1970 года UTC+0.</li>
+                <li>getTimezoneOffset() - возвращает разницу в минутах между UTC и местным часовым поясом</li>
+                setFullYear(year, [month], [date])
+                <li>setMonth(month, [date])</li>
+                <li>setDate(date)</li>
+                <li>setHours(hour, [min], [sec], [ms])</li>
+                <li>setMinutes(min, [sec], [ms])</li>
+                <li>setSeconds(sec, [ms])</li>
+                <li>setMilliseconds(ms)</li>
+                <li>setTime(milliseconds)</li>
+                <li>Date.now() - возвращает текущую метку времени</li>
+                <li>Date.parse(str) - считывает дату из строки и возвращает таймстамп</li>
+            </ol>
+        </div>
+    </div>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="main.js"></script>
 </body>
