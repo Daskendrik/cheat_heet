@@ -90,6 +90,7 @@
             <li>opacity - видимость</li>
             <li>width</li>
             <li>height</li>
+            <li>box-sizing - border-box ( свойства width/height обозначают то, что находится внутри) или content-box(width/height задают высоту/ширину всего элемента)</li>
             <li>cursor: pointer - наведение мыши на объект</li>
          </ol>
     </div>
@@ -131,42 +132,42 @@
            <li>Из-за того, что блок с float удалён из потока, родитель не выделяет под него места. Родителю надо добавить тоже float</li>
            <li>clear - Применение этого свойства сдвигает элемент вниз до тех пор, пока не закончатся float'ы слева/справа/с обеих сторон.</li>
         </ol>
-   </div>
+    </div>
     <div class="card">
-        <h3>CSS-переходы</h3>
-        <p><a href="https://learn.javascript.ru/css-animations">Инфа</a></p>
-        <button class="btn" ol="css_go">Показать</button>
-        <ol id="css_go">
-           <li>transition-property – свойство перехода</li>
-           <li>transition-duration – продолжительность перехода</li>
-           <li>transition-timing-function – временная функция перехода</li>
-           <li>transition-delay – задержка начала перехода</li>
-        </ol>
-   </div>
+            <h3>CSS-переходы</h3>
+            <p><a href="https://learn.javascript.ru/css-animations">Инфа</a></p>
+            <button class="btn" ol="css_go">Показать</button>
+            <ol id="css_go">
+            <li>transition-property – свойство перехода</li>
+            <li>transition-duration – продолжительность перехода</li>
+            <li>transition-timing-function – временная функция перехода</li>
+            <li>transition-delay – задержка начала перехода</li>
+            </ol>
+    </div>
     <div class="card">
-        <h3>Анимация</h3>
-        <p><a href="https://youtu.be/GKgOOuTL0po">Инфа</a><a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_animations/Using_CSS_animations">  Инфа 2</a></p>
-        <button class="btn" ol="css_anim">Показать</button>
-        <ol id="css_anim">
-           <li>Анимация создается с помощью @keyframes где пишется animation-name</li>
-           <li>animation-name – имя анимации прописывается в селекторе того, что будет анимироваться</li>
-           <li>animation-duration – определяет время, в течение которого должен пройти один цикл анимации</li>
-           <li>transition-delay – задержка начала перехода</li>
-           <li>animation-timing-function - Настраивает ускорение анимации</li>
-           <li>animation-delay
-            Настраивает задержку между временем загрузки элемента и временем начала анимации.</li>
-            <li>animation-iteration-count
-            Определяет количество повторений анимации; вы можете использовать значение infinite для бесконечного повторения анимации.</li>
-            <li>animation-direction
-            Даёт возможность при каждом повторе анимации идти по альтернативному пути, либо сбросить все значения и повторить анимацию.</li>
-            <li>animation-fill-mode
-            Настраивает значения, используемые анимацией, до и после исполнения.</li>
-            <li>animation-play-state
-            Позволяет приостановить и возобновить анимацию.</li>
-            <li>animation и далее все свйства в строчку</li>
-        </ol>
-   </div>
-   <script src="node_modules/jquery/dist/jquery.js"></script>
+            <h3>Анимация</h3>
+            <p><a href="https://youtu.be/GKgOOuTL0po">Инфа</a><a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_animations/Using_CSS_animations">  Инфа 2</a></p>
+            <button class="btn" ol="css_anim">Показать</button>
+            <ol id="css_anim">
+            <li>Анимация создается с помощью @keyframes где пишется animation-name</li>
+            <li>animation-name – имя анимации прописывается в селекторе того, что будет анимироваться</li>
+            <li>animation-duration – определяет время, в течение которого должен пройти один цикл анимации</li>
+            <li>transition-delay – задержка начала перехода</li>
+            <li>animation-timing-function - Настраивает ускорение анимации</li>
+            <li>animation-delay
+                Настраивает задержку между временем загрузки элемента и временем начала анимации.</li>
+                <li>animation-iteration-count
+                Определяет количество повторений анимации; вы можете использовать значение infinite для бесконечного повторения анимации.</li>
+                <li>animation-direction
+                Даёт возможность при каждом повторе анимации идти по альтернативному пути, либо сбросить все значения и повторить анимацию.</li>
+                <li>animation-fill-mode
+                Настраивает значения, используемые анимацией, до и после исполнения.</li>
+                <li>animation-play-state
+                Позволяет приостановить и возобновить анимацию.</li>
+                <li>animation и далее все свйства в строчку</li>
+            </ol>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="main.js"></script>
 </body>
 </html> 
