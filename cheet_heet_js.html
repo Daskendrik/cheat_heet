@@ -146,6 +146,60 @@
         </ol>
     </div>
     <div class="card">
+        <h3>Функции</h3>
+        <p>Задаются 3 способами:</p>
+        <ul>
+            <li> function myFunction() {}  - видно до и после объявления</li>
+            <li>let myFunction = function () {} - видно только после объявления</li>
+            <li>() => {} - стрелочное объявление, выполняется сразу</li>
+        </ul>
+        <p>Свойства:</p>
+        <ul>
+            <li>length - содержит количество параметров функции в её объявлении</li>
+            <li>name - имя функции</li>
+        </ul>
+        <p><a href="https://learn.javascript.ru/settimeout-setinterval">Запланированые функции</a>:</p>
+        <ol style="display: block;">
+            <li>setTimeout(func|code, [delay], [arg1], [arg2], ...) позволяет вызвать функцию один раз через определённый интервал времени</li>
+            <li>setInterval(func|code, [delay], [arg1], [arg2], ...) позволяет вызывать функцию регулярно, повторяя вызов через определённый интервал времени</li>
+            <li>clearTimeout(timerId); - очищает таймер. timerId - название переменной, которая создается при создание set*</li>
+        </ol>
+        <p><a href="https://learn.javascript.ru/call-apply-decorators">Декоратор(Обертка в кеш)</a> это обёртка вокруг функции, которая изменяет поведение последней.: <br>С одним аргументом</p>
+        <p style="white-space:pre">
+            function cachingDecorator(func) {
+                let cache = new Map();
+              
+                return function(x) {
+                  if (cache.has(x)) {    // если кеш содержит такой x,
+                    return cache.get(x); // читаем из него результат
+                  }
+              
+                  let result = func(x); // иначе, вызываем функцию
+              
+                  cache.set(x, result); // и кешируем (запоминаем) результат
+                  return result;
+                };
+            }
+        </p>
+        <p>С несколькими</p>
+        <p style="white-space:pre">
+            function cachingDecorator(func, hash) {
+                let cache = new Map();
+                return function() {
+                  let key = hash(arguments); // (*)
+                  if (cache.has(key)) {
+                    return cache.get(key);
+                  }
+              
+                  let result = func.call(this, ...arguments); // (**)
+              
+                  cache.set(key, result);
+                  return result;
+                };
+            }
+        </p>
+    </div>
+    <div class="card">
         <h3>Объекты</h3>
         <div class="obj">
             <p>Задаются так: <br>
