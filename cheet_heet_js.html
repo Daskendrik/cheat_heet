@@ -159,6 +159,7 @@
                 <li>obj?.prop – возвращает obj.prop если obj существует, в противном случае undefined.</li>
                 <li>obj?.[prop] – возвращает obj[prop] если obj существует, в противном случае undefined.</li>
                 <li>obj.method?.() – вызывает obj.method(), если obj.method существует, в противном случае возвращает undefined.</li>
+                <li>toJSON(){} - метод в объекте, который описывает, как объект преобразовывать в JSON</li>
             </ul></p>
 
         </div>
@@ -197,6 +198,18 @@
                 <li>Date.parse(str) - считывает дату из строки и возвращает таймстамп</li>
             </ol>
         </div>
+    </div>
+    <div class="card">
+        <h3>JSON</h3>
+        <p>JSON (JavaScript Object Notation) – это формат данных, который имеет собственный независимый стандарт и библиотеки для большинства языков программирования. </p>
+        <ol style="display: block;">
+            <li>JSON.stringify для преобразования объектов в JSON</li>
+            <li>JSON.parse для преобразования JSON обратно в объект.</li>
+            <li>JSON.stringify(value, [replacer, space]) - value значение для кодирования, replacer массив свойств для кодирования или функция соответствия, space дополнительное пространство (отступы) для форматирования</li>
+            <li>JSON.stringify(value, replacer, space) – это количество пробелов, используемых для удобного форматирования.</li>
+            <li>toJSON(){} - метод в объекте, который описывает, как объект преобразовывать в JSON</li>
+            <li>JSON.parse(str, [reviver]) - декодировать JSON-строку.str - JSON для преобразования в объект, reviver - необязательная функция, которая будет вызываться для каждой пары (ключ, значение) и может преобразовывать значение.</li>
+        </ol>
     </div>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="main.js"></script>
