@@ -9,6 +9,7 @@
 <body>
     <div class="card">
         <p style="text-align: center;"><a href="index.html">Вернуться в меню</a></p>
+        <p><a href="https://developer.mozilla.org/ru/docs/Learn/CSS">учебник</a></p>
     </div>
     <div class="card">
         <h3>Селекторы</h3>
@@ -33,6 +34,7 @@
             <li>vh – 1% высоты окна</li>
             <li>vmin – наименьшее из (vw, vh), в IE9 обозначается vm</li>
             <li>vmax – наибольшее из (vw, vh)</li>
+            <li>clamp(min,now, max) -  мощный интрумент регулировки размера. Работает так: у нас есть динамический размер 1vh, он будет у нас в now. В параметры min и max мы вставляем минимальный и максимальный размер, то есть, когда now выходит за пределы, величина будет или min или max. Подробнее <a href="https://developer.mozilla.org/ru/docs/Web/CSS/clamp">туть</a></li>
         </ol>
     </div>
     <div class="card">
@@ -79,19 +81,37 @@
             <li>font-family</li>
             <li>text-decoration</li>
             <li>color</li>
+            <li>text-shadow - обводка текста</li>
             <li>white-space позволяет сохранять пробелы и переносы строк (pre -Сохраняет пробелы, переносит текст при явном разрыве строки. nowrap - Не сохраняет пробелы, игнорирует явные разрывы строки (не переносит текст).)</li>
             <h4>Расположение блоков</h4>
-            <li>display: flex; - выстраивает элементы-потомки в горизонтальный ряд + justify-content: center; выравнивает элементы по основной оси/align-items - по вертикали</li>
+            <li>position - позицианирование, со значением absolute работются так же свойства left и right </li>
+            <li>z-index - типо слоя как в фотошопе</li>
+            <li>display: 
+                <ul>
+                    <li>flex; - выстраивает элементы-потомки в горизонтальный ряд + justify-content: center; выравнивает элементы по основной оси/align-items - по вертикали</li>
+                    <li>inline - в линию</li>
+                    <li>inline-block - в линию, но имеет св-ва блоков</li>
+                </ul>
+            </li>
+            <li>text-align - расположение содержимого горизонтально</li>
+            <li>vertical-align - расположение содержимого вертикально</li>
             <h4>Отступы</h4>
             <li>margin - внешние отступы</li>
             <li>padding - внутренние отступы</li>
+            <h4>Бэкграунд</h4>
+            <li>background - там может быть как цвет, так и url()</li>
+            <li>background-position - выравнивание картинки заднего фона</li>
+            <li>background-position-y - сдвиг</li>
+            <li>background-repeat - повторение</li>
+            <li>background-size - размер</li>
+            <li>background-attachment - является ли позиция этого изображения фиксированной в области просмотра, или прокручивается вместе с содержащим его блоком</li>
             <h4>Другое</h4>
-            <li>background-color</li>
             <li>opacity - видимость</li>
             <li>width</li>
             <li>height</li>
             <li>box-sizing - border-box ( свойства width/height обозначают то, что находится внутри) или content-box(width/height задают высоту/ширину всего элемента)</li>
             <li>cursor: pointer - наведение мыши на объект</li>
+            <li>overflow - что будет с тем, что выходит за границы бокса</li>
          </ol>
     </div>
     <div class="card">
