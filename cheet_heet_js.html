@@ -159,7 +159,8 @@
             <li>name - имя функции</li>
         </ul>
         <p><a href="https://learn.javascript.ru/settimeout-setinterval">Запланированые функции</a>:</p>
-        <ol style="display: block;">
+        <button class="btn" ol="fun_1">Показать</button>
+        <ol id="fun_1">
             <li>setTimeout(func|code, [delay], [arg1], [arg2], ...) позволяет вызвать функцию один раз через определённый интервал времени</li>
             <li>setInterval(func|code, [delay], [arg1], [arg2], ...) позволяет вызывать функцию регулярно, повторяя вызов через определённый интервал времени</li>
             <li>clearTimeout(timerId); - очищает таймер. timerId - название переменной, которая создается при создание set*</li>
@@ -227,7 +228,8 @@
     <div class="card">
         <h3>Время</h3>
         <div class="obj">
-            <ol style="display: block;">
+            <button class="btn" ol="time">Показать</button>
+            <ol id="time">
                 <li>new Date() - текущие время и дата</li>
                 <li>new Date(milliseconds) - с временем, равным количеству миллисекунд (тысячная доля секунды), прошедших с 1 января 1970 года UTC+0</li>
                 <li>new Date(datestring) - если аргумент всего один, и это строка, то из неё «прочитывается» дата</li>
@@ -256,7 +258,8 @@
     <div class="card">
         <h3>JSON</h3>
         <p>JSON (JavaScript Object Notation) – это формат данных, который имеет собственный независимый стандарт и библиотеки для большинства языков программирования. </p>
-        <ol style="display: block;">
+        <button class="btn" ol="json">Показать</button>
+        <ol id="json">
             <li>JSON.stringify для преобразования объектов в JSON</li>
             <li>JSON.parse для преобразования JSON обратно в объект.</li>
             <li>JSON.stringify(value, [replacer, space]) - value значение для кодирования, replacer массив свойств для кодирования или функция соответствия, space дополнительное пространство (отступы) для форматирования</li>
@@ -274,7 +277,7 @@
             // "певец" <br>
           });
         </p>
-        <ol>
+        <ol style="display: block;">
             <li>function - будет вызвана сразу</li>
             <li>resolve(value) — вызовется, если работа завершилась успешно, с результатом value.</li>
             <li>reject(error) —вызовется, если произошла ошибка, error – объект ошибки.</li>
