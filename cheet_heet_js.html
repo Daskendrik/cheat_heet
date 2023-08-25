@@ -272,7 +272,13 @@
         <p style="word-spacing: pre;">let promise = new Promise(function(resolve, reject) { <br>
             // функция-исполнитель (executor) <br>
             // "певец" <br>
-          });</p>
+          });
+        </p>
+        <ol>
+            <li>function - будет вызвана сразу</li>
+            <li>resolve(value) — вызовется, если работа завершилась успешно, с результатом value.</li>
+            <li>reject(error) —вызовется, если произошла ошибка, error – объект ошибки.</li>
+        </ol>
     </div>
     <script src="query.js"></script>
     <script src="main.js"></script>
