@@ -283,6 +283,11 @@
             <li>resolve(value) — вызовется, если работа завершилась успешно, с результатом value.</li>
             <li>reject(error) —вызовется, если произошла ошибка, error – объект ошибки.</li>
         </ol>
+        <p>Внутренние свойства</p>
+        <ol style="display: block;">
+            <li>state («состояние») — вначале "pending" («ожидание»), потом меняется на "fulfilled" («выполнено успешно») при вызове resolve или на "rejected" («выполнено с ошибкой») при вызове reject.</li>
+            <li>result («результат») — вначале undefined, далее изменяется на value при вызове resolve(value) или на error при вызове reject(error)</li>
+        </ol>
     </div>
     <script src="jquery.js"></script>
     <script src="main.js"></script>
