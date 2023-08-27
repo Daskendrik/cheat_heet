@@ -277,7 +277,7 @@
             // "певец" <br>
           });
         </p>
-        <p>Параметры</p>
+        <h4>Параметры</h4>
         <ol style="display: block;">
             <li>function - будет вызвана сразу</li>
             <li>resolve(value) — вызовется, если работа завершилась успешно, с результатом value.</li>
@@ -289,6 +289,18 @@
             <li>result («результат») — вначале undefined, далее изменяется на value при вызове resolve(value) или на error при вызове reject(error)</li>
         </ol>
         <p style="text-align: center;"><img src="img/01.png" alt=""></p>
+        <h4>Функции-потребители - then</h4>
+        <p>Синтаксис</p>
+        <p style="word-spacing: pre;">promise.then( <br>
+            function(result) { /* обработает успешное выполнение */ }, <br>
+            function(error) { /* обработает ошибку */ } <br>
+          );
+        </p>
+        <p>Описание</p>
+        <ol style="display: block;">
+            <li>Первый аргумент метода .then – функция, которая выполняется, когда промис переходит в состояние «выполнен успешно», и получает результат.</li>
+            <li>Второй аргумент .then – функция, которая выполняется, когда промис переходит в состояние «выполнен с ошибкой», и получает ошибку.</li>
+        </ol>
     </div>
     <script src="jquery.js"></script>
     <script src="main.js"></script>
