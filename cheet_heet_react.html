@@ -1,57 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
     <div class="card">
-        <p style="text-align: center;"><a href="index.html">Вернуться в меню</a></p>
-        <p><a href="https://ru.react.js.org/">учебник</a></p>
+      <p style="text-align: center">
+        <a href="index.html">Вернуться в меню</a>
+      </p>
+      <p><a href="https://ru.react.js.org/">учебник</a></p>
     </div>
     <div class="card">
-        <h3>Основные понятия</h3>
-        <button class="btn" ol="sel">Показать</button>
-        <ol style="display: block;">
-            <li>Компоненты - блоки, из которых формируется html</li>
-            <li>JSX - язык-надстройка для JS</li>
-            <li>State/состояние - </li>
-            <li>prop/свойство - то, что пишется при рендере в пропах</li>
-            <li>React Hook - позволяет менять состояния в компонентых, созданных через функцию, а не через класс</li>
-        </ol>
+      <h3>Основные понятия</h3>
+      <button class="btn" ol="sel">Показать</button>
+      <ol style="display: block">
+        <li>Компоненты - блоки, из которых формируется html</li>
+        <li>JSX - язык-надстройка для JS</li>
+        <li>State/состояние -</li>
+        <li>prop/свойство - то, что пишется при рендере в пропах</li>
+        <li>
+          React Hook - позволяет менять состояния в компонентых, созданных через
+          функцию, а не через класс
+        </li>
+      </ol>
     </div>
     <div class="card">
-        <h3>Правила</h3>
-        <button class="btn" ol="sel">Показать</button>
-        <ol style="display: block;">
-            <li>Кастомные компоненты должны начинаться с БОЛЬШОЙ буквы</li>
-            <li>Свойства передаются только дочерним</li>
-            <li>Состояние меняется только в компоненте, где это состояние прописано</li>
-            <li>Все React-компоненты должны вести себя как чистые функции в плане своих свойств.</li>
-        </ol>
+      <h3>Правила</h3>
+      <button class="btn" ol="sel">Показать</button>
+      <ol style="display: block">
+        <li>Кастомные компоненты должны начинаться с БОЛЬШОЙ буквы</li>
+        <li>Свойства передаются только дочерним</li>
+        <li>
+          Состояние меняется только в компоненте, где это состояние прописано
+        </li>
+        <li>
+          Все React-компоненты должны вести себя как чистые функции в плане
+          своих свойств.
+        </li>
+      </ol>
     </div>
     <div class="card">
-        <h3>Состояние</h3>
-        <button class="btn" ol="sel">Показать</button>
-        <ol style="display: block;">
-            <h4>setState()</h4>
-            <li>Не изменяйте напрямую состояние.Вместо этого используйте setState() <a href="https://ru.react.js.org/docs/state-and-lifecycle.html#Не-изменяйте-напрямую-состояние">Тык</a></li>
-            <li>Обновления состояния могут быть асинхронными <a href="https://ru.react.js.org/docs/state-and-lifecycle.html#Обновления-состояния-могут-быть-асинхронными">Тык</a></li>
-            <li>Обновления состояния объединяются <a href="https://ru.react.js.org/docs/state-and-lifecycle.html#Обновления-состояния-объединяются">Тык</a></li>
-        </ol>
+      <h3>Состояние</h3>
+      <button class="btn" ol="sel">Показать</button>
+      <ol style="display: block">
+        <h4>setState()</h4>
+        <li>
+          Не изменяйте напрямую состояние.Вместо этого используйте setState()
+          <a
+            href="https://ru.react.js.org/docs/state-and-lifecycle.html#Не-изменяйте-напрямую-состояние"
+            >Тык</a
+          >
+        </li>
+        <li>
+          Обновления состояния могут быть асинхронными
+          <a
+            href="https://ru.react.js.org/docs/state-and-lifecycle.html#Обновления-состояния-могут-быть-асинхронными"
+            >Тык</a
+          >
+        </li>
+        <li>
+          Обновления состояния объединяются
+          <a
+            href="https://ru.react.js.org/docs/state-and-lifecycle.html#Обновления-состояния-объединяются"
+            >Тык</a
+          >
+        </li>
+      </ol>
     </div>
     <div class="card">
-        <h3>Хуки(методы) жизненгого цикла</h3>
-        <button class="btn" ol="sel">Показать</button>
-        <ol style="display: block;">
-            <li>componentDidMount() запускается после того, как вывод компонента отрисован</li>
-            <li>componentWillUnmount() -метод вызывается, когда компонент удаляется из DOM </li>
-        </ol>
+      <h3>Хуки(методы) жизненгого цикла</h3>
+      <button class="btn" ol="sel">Показать</button>
+      <ol style="display: block">
+        <li>
+          componentDidMount() запускается после того, как вывод компонента
+          отрисован
+        </li>
+        <li>
+          componentWillUnmount() -метод вызывается, когда компонент удаляется из
+          DOM
+        </li>
+        <li>
+          React.useState - добавляет параметр и функцию для его изменения. let
+          [a,b] = React.useState(4) - где а - параметр, в который запишется 4, а
+          b - функция, которая изменит ее
+        </li>
+      </ol>
     </div>
 
     <script src="jquery.js"></script>
     <script src="main.js"></script>
-</body>
-</html> 
+  </body>
+</html>
